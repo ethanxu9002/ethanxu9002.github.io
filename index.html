@@ -8,5 +8,17 @@
 <body>
   <p id="helloworld">hello world</p>
   <p>what a great day to be alive</p>
+  <div>
+    <button class="button" onclick="redden()">More Red</button>
+  </div>
+  <script>
+    let r = 0
+    let redButton = document.getElementById("red-button")
+    function redden() {
+      r++
+      redButton.style.color = `rgb(${r},0,0)`
+    }
+    redden()
+  </script>
 </body>
 </html>
